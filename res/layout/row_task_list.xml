@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<ImageView
+		android:id="@+id/row_task_list_icon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/balai"
+		android:gravity="left" />
+	<TextView
+		android:id="@+id/row_task_list_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/row_task_list_icon"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView
+		android:id="@+id/row_task_list_points"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:layout_toRightOf="@id/row_task_list_icon"
+		android:layout_below="@id/row_task_list_name"
+		android:gravity="right"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+	<TextView 
+		android:id="@+id/row_task_list_id"
+		android:height="0px"
+		android:layout_width="0px"
+		android:layout_height="0px"
+		android:width="0px"	/>
+</RelativeLayout>

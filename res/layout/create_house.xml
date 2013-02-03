@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView
+		android:id="@+id/create_house_title"
+		android:text="@string/create_house_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+	<TextView
+		android:id="@+id/create_house_name_lbl"
+		android:text="@string/create_house_name_lbl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+	<EditText
+		android:id="@+id/create_house_name_etxt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<requestFocus />
+	</EditText>
+	<TextView
+		android:id="@+id/create_house_housemate_nickname_lbl"
+		android:text="@string/create_house_housemate_nickname_lbl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+	<EditText
+		android:id="@+id/create_house_housemate_nickname_etxt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+	<TextView
+		android:id="@+id/create_house_password_lbl"
+		android:text="@string/create_house_password_lbl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+	<EditText
+		android:id="@+id/create_house_password_etxt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPassword" />
+	<TextView
+		android:id="@+id/create_house_password_confirmation_lbl"
+		android:text="@string/create_house_password_confirmation_lbl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+	<EditText
+		android:id="@+id/create_house_password_confirmation_etxt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPassword" />
+	<Button
+		android:id="@+id/create_house_create_btn"
+		android:text="@string/create_house_create_btn"
+		android:onClick="onCreateButtonClick"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+</LinearLayout>
