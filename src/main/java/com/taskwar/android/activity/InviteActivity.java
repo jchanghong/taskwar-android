@@ -1,11 +1,5 @@
 package com.taskwar.android.activity;
 
-import static com.taskwar.android.util.DialogUtils.DIALOG_SELECT_EMAIL_ID;
-import static com.taskwar.android.util.DialogUtils.DIALOG_SEND_INVITATIONS_PROGRESS_ID;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Dialog;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
@@ -14,19 +8,19 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract.CommonDataKinds.Email;
 import android.widget.ListView;
-
-import com.googlecode.androidannotations.annotations.AfterViews;
-import com.googlecode.androidannotations.annotations.Background;
-import com.googlecode.androidannotations.annotations.Click;
-import com.googlecode.androidannotations.annotations.EActivity;
-import com.googlecode.androidannotations.annotations.OnActivityResult;
-import com.googlecode.androidannotations.annotations.UiThread;
-import com.googlecode.androidannotations.annotations.rest.RestService;
 import com.taskwar.android.R;
 import com.taskwar.android.model.Invitation;
 import com.taskwar.android.rest.RestClient;
 import com.taskwar.android.ui.adapter.InvitationListAdapter;
 import com.taskwar.android.ui.dialog.EmailListDialog;
+import org.androidannotations.annotations.*;
+import org.androidannotations.annotations.rest.RestService;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.taskwar.android.util.DialogUtils.DIALOG_SELECT_EMAIL_ID;
+import static com.taskwar.android.util.DialogUtils.DIALOG_SEND_INVITATIONS_PROGRESS_ID;
 
 @EActivity(R.layout.invite)
 public class InviteActivity extends ListActivity {
